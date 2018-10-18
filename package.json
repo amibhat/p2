@@ -1,0 +1,26 @@
+{
+  "name": "nanni",
+  "version": "1.0.0",
+  "description": "my favorite animal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "p2",
+    "nanni"
+  ],
+  "author": "amitb",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "jshint": "^2.9.6",
+    "jshint-loader": "^0.8.4",
+    "node-libs-browser": "^2.1.0",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {}
+}
