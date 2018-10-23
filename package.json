@@ -4,7 +4,7 @@
   "description": "my favorite animal",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --host 127.0.0.1"
+    "start": "webpack-dev-server --host 127.0.0.1 -d"
   },
   "keywords": [
     "p2",

@@ -15,10 +15,10 @@ define([], function() {
 });*/
 
 
-let bs = {
+let bsPlugin = {
 			start: (domId) => {
 				document.getElementById(domId).innerHTML = "play here!";
 			}
 		};
 
-export {bs};
+export default {bsPlugin};

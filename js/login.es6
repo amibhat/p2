@@ -1,6 +1,5 @@
-document.write('<br/>logging in...')
-
 let login = (user, pw) => {
+	console.log('<br/>logging in...')
 	if (user === 'admin' && pw === 'm123') {
 		console.log('<br/>logged in!!');
 
