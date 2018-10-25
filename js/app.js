@@ -20,8 +20,12 @@ $('#menu').append('<a href="#">Binary Search</a>');*/
 
 let menuItemId = 0;
 
-let addMenuItem = (menuItemName, callback, argObj) => {
+let addMenuItem = (menuItemName, callback) => {
+	let argObj = {};
+
 	$('#menu').append('&nbsp&nbsp&nbsp&nbsp<a href="#" id="menu_' + menuItemId + '">' + menuItemName + '</a>');
+
+	argObj.playgroundDomId = 'playground';
 
 	$('#menu_' + menuItemId).on('click', argObj, callback);
 
@@ -29,18 +33,15 @@ let addMenuItem = (menuItemName, callback, argObj) => {
 }
 
 let addPlugin = (p) => {
-	addMenuItem(p.menuItemName, p.callbackFromMenu, p.callbackArgs);
+	addMenuItem(p.menuItemName, p.callbackFromMenu);
 }
 
 let shout = (e) => {
-	debugger;
-	alert(e.data.message);
+	$('#' + e.data.playgroundDomId).html("Welcome to meet nanni!!");
 }
 
-addMenuItem('Home', shout, { message: "Welcome to meet nanni!!" });
-
-
-
+addMenuItem('Home', shout);
+addPlugin(new bsPlugin());
 
 
 
